@@ -1,0 +1,63 @@
+/* overall container */
+#container {
+	position: relative;
+	padding-top: 75%;
+	overflow: hidden;
+}
+
+/* image bg */
+#imageBg {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	z-index: 1;
+}
+
+/* overlay layer that holds hotspots */
+#overlay {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* overlay needs to be on top of image bg */
+	z-index: 2;
+}
+
+/* individual hotspot */
+#overlay a.hotspot {
+	display: block;
+	position: absolute;
+	color: #fff;
+	background: #000;
+	/* this makes hotspot sizing relative (5%) to viewport width */
+	font-size: 5vw;
+	width: 1em;
+	height: 1em;
+	/* makes icon sitting at center */
+	line-height: 2em;
+	/* these offsets the hotspots back half of its size */
+	margin-top: -1em;
+	margin-left: -1em;
+	/* this makes total width 2em (1em + 0.5em * 2) */
+	padding: 0.5em;
+	outline: none!important;
+	text-decoration: none!important;
+	border-radius: 50%;
+}
+
+#overlay a.hotspot:hover {
+	background: #f00;
+}
+
+/* hide audio html elem from display */
+audio {
+	display: none!important;
+}

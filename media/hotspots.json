@@ -1,0 +1,16 @@
+[{
+	"title": "Puppy",
+	"media": "dog.ogg",
+	"posx": 0.65,
+	"posy": 0.50
+}, {
+	"title": "Kitten",
+	"media": "cat.ogg",
+	"posx": 0.34,
+	"posy": 0.60
+}, {
+	"title": "Ducky",
+	"media": "duck.ogg",
+	"posx": 0.52,
+	"posy": 0.85
+}]
